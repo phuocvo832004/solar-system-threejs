@@ -89,7 +89,9 @@ class PickHelper {
     moons.innerHTML = AstronomicalBodiesNames[positionX].moons;
     rings.innerHTML = AstronomicalBodiesNames[positionX].rings;
     adjective.innerHTML = AstronomicalBodiesNames[positionX].adjective;
-    des_img.innerHTML = `<img style="width: 20rem; height: 20rem" src="../assets/images/${AstronomicalBodiesNames[positionX].name}.jpg" alt="">`;
+    des_img.innerHTML = `<img style="width: 20rem; height: 20rem" src="../assets/images/${AstronomicalBodiesNames[
+      positionX
+    ].name.toLowerCase()}.jpg" alt="">`;
   }
 }
 
