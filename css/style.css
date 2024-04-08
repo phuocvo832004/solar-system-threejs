@@ -188,6 +188,7 @@ body {
   padding: 2px 16px;
   display: flex;
   gap: 8rem;
+  align-items: center;
 }
 
 .modal-body a {
@@ -202,6 +203,7 @@ body {
 
 #describe-img {
   margin: 0;
+  height: 100%;
 }
 
 span {
