@@ -5,7 +5,7 @@ class PickHelper {
     this.pickedObjectSavedColor = 0;
   }
 
-  pick(normalizedPosition, getAstrionomicalBodies, camera, time, scene) {
+  pick(normalizedPosition, getAstrionomicalBodies, camera, time) {
     // restore the color if there is a picked object
     if (this.pickedObject) {
       this.pickedObject.material.color = this.pickedObjectSavedColor;
@@ -89,7 +89,8 @@ class PickHelper {
     moons.innerHTML = AstronomicalBodiesNames[positionX].moons;
     rings.innerHTML = AstronomicalBodiesNames[positionX].rings;
     adjective.innerHTML = AstronomicalBodiesNames[positionX].adjective;
-    des_img.innerHTML = `<img style="width: 20rem; height: 20rem" src="../assets/images/${AstronomicalBodiesNames[
+    des_img.innerHTML = `<img style="width: 20rem; height: 20rem" 
+    src="./assets/images/${AstronomicalBodiesNames[
       positionX
     ].name.toLowerCase()}.jpg" alt="">`;
   }
