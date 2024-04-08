@@ -78,16 +78,24 @@ body {
 /* The Modal (background) */
 .modal {
   font-family: system-ui;
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 20px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 20px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -105,12 +113,14 @@ body {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+
 }
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 800px) {
   .modal-content {
-    width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+    width: 80%;
+    /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
 
@@ -120,6 +130,7 @@ body {
     top: -300px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -131,6 +142,7 @@ body {
     top: -300px;
     opacity: 0;
   }
+
   to {
     top: 0;
     opacity: 1;
@@ -174,6 +186,22 @@ body {
 
 .modal-body {
   padding: 2px 16px;
+  display: flex;
+  gap: 8rem;
+}
+
+.modal-body a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body img {
+  border-radius: 10px;
+}
+
+#describe-img {
+  margin: 0;
 }
 
 span {
@@ -195,10 +223,12 @@ li {
 div.mobile {
   display: none;
 }
+
 @media (max-width: 640px) {
   div.mobile {
     display: block;
   }
+
   div.desktop {
     display: none;
   }
